@@ -41,6 +41,7 @@ def takeHelpAndReward(helper) {
   helper.helpMoveThings()
 
   if (helper.metaClass.respondsTo(helper, "eatSugarcane")) {
+    //noinspection GrUnresolvedAccess
     helper.eatSugarcane()
   }
 }
