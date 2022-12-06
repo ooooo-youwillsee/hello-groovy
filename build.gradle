@@ -1,21 +1,29 @@
 plugins {
-    id 'groovy'
-    id 'java'
+  id 'groovy'
+  id 'java'
 }
 
 group 'com.ooooo'
 version '1.0-SNAPSHOT'
 
 repositories {
-    mavenCentral()
+  mavenCentral()
+}
+
+sourceSets {
+  main {
+    java {
+      srcDirs += ['src/main/groovy', 'src/main/java']
+    }
+  }
 }
 
 dependencies {
-    implementation 'org.apache.groovy:groovy:4.0.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+  implementation 'org.apache.groovy:groovy-all:4.0.2'
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 test {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
