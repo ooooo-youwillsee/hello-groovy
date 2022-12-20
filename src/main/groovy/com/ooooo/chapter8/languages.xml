@@ -1,0 +1,11 @@
+<languages>
+  <language name="C++">
+    <author>aaa</author>
+  </language>
+  <language name="Java">
+    <author>bbb</author>
+  </language>
+  <language name="Groovy">
+    <author>ccc</author>
+  </language>
+</languages>
